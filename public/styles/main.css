@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    gap: 2rem;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    gap: 10px 20px;
+    border-radius: 20px;
+    padding: 3px;
+
+}
+
+.brandName {
+    grid-column: span 4;
+    font-size: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover {
+    background-color: blueviolet;
+    color: bisque;
+    border-radius: 3px;
+}
+
+.footer {
+    /* background-color: rgb(227, 206, 255); */
+    border-radius: 20px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-content: left;
+    align-items: start;
+    text-align: left;
+    background-color: rgb(250, 231, 255);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.input {
+    width: 300px;
+    height: 20px;
+    border-radius: 20px;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+.button {
+    width: 80px;
+    height: 24px;
+    background-color:  rgb(227, 206, 255);
+    border: none;
+    font-family: "Oswald", sans-serif;
+    border-radius: 20px;
+}
+.button:hover {
+    background-color: blueviolet;
+    color: bisque;
+}
+
+
+.input.blog {
+    overflow-wrap: break-word;
+    height: 200px;
+    word-break: break-all;
+}
+
+.viewBlog {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    overflow-wrap: break-word;
+    gap: 20px 20px;
+}
+.viewGrid{
+    background-color:  rgb(251, 237, 253);
+    padding: 20px;
+    border-radius: 20px;
+}
+.titleContent{
+    font-size: 30px;
+}

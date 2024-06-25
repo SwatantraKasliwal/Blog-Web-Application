@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs') %>
+    <p>This is the file to delete</p>
+
+    <div class="viewBlog">
+        <% for (const element of userData) { %>
+            <div class="viewGrid">
+                <h2 class="titleContent">
+                    <%= element.title %>
+                </h2>
+                <p class="blogContent">
+                    <%= element.blog %>
+                </p>
+                <button class="button deleteButton">Delete</button>
+            </div>
+            <%;} %>
+        </div>
+        <form action="/submitDelete" method="POST">
+            <label for="deletePost">Enter the name of the post you want to delete</label>
+            <input type="text" name="deletePost" placeholder="..">
+            <input type="submit" value="submit">
+        </form>
+
+
+
+    <%- include('partials/footer.ejs') %>

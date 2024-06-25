@@ -1,0 +1,16 @@
+<%- include('partials/header.ejs') %>
+    <!-- fetching the json data directly -->
+    <div class="viewBlog">       
+        <% for (const element of userData) { %>
+            <div class="viewGrid">
+                <h2 class="titleContent">
+                    <%= element.title %>
+                </h2>
+                <p class="blogContent">
+                    <%= element.blog %>
+                </p> 
+            </div>
+        <%;} %>
+    </div>
+
+<%- include('partials/footer.ejs') %>
